@@ -1,3 +1,7 @@
-.main {
-  background-image: url('../images/img-story-main.png';
+div {
+  border: 2px solid black;
+}
+
+div.feature-title {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
 }
