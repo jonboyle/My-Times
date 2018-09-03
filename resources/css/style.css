@@ -2,6 +2,44 @@ div {
   border: 2px solid black;
 }
 
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
+}
+
+.logo span {
+  color: MediumAquamarine;
+}
+
+div.left-column {
+  border: 2px solid red;
+}
+
+div.middle-column {
+  border: 2px solid green;
+}
+
+div.right-column {
+  border: 2px solid blue
+}
+
 .feature-article h2 {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
 }
