@@ -47,16 +47,29 @@ a {
   color: black;
 }
 
-div.left-column {
+.content {
+  display: flex;
+  width: 1232px;
+  padding-top: 116px;
+}
+
+.column {
+  margin-right: 32px;
+}
+
+.column.large {
   border: 2px solid red;
+  width: 630px;
 }
 
-div.middle-column {
+.column.medium {
   border: 2px solid green;
+  width: 300px;
 }
 
-div.right-column {
-  border: 2px solid blue
+.column.small {
+  border: 2px solid blue;
+  width: 240px;
 }
 
 .feature-article h2 {
