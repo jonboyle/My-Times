@@ -1,5 +1,8 @@
+body {
+  margin: 0;
+}
 div {
-  border: 2px solid black;
+  display: block;
 }
 
 header {
@@ -14,6 +17,13 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+}
+
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
 }
 
 .logo {
@@ -55,24 +65,83 @@ a {
 
 .column {
   margin-right: 32px;
+  display: flex;
+  flex-direction: column;
 }
 
 .column.large {
-  border: 2px solid red;
   width: 630px;
 }
 
 .column.medium {
-  border: 2px solid green;
   width: 300px;
 }
 
 .column.small {
-  border: 2px solid blue;
   width: 240px;
 }
 
-.feature-article h2 {
+.feature-story {
+  height: 494px;
+  width: 630px;
+}
+
+.feature-title {
+  height: 300px;
+  width: 630px;
+}
+
+.feature-title h2 {
+  display: inline;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+.title-image {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.title-image h2 {
+  display: inline;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.title-no-image {
+  display: flex;
+  width: 300px;
+}
+
+.stories {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.narrative {
+  display: flex;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+#hero-title {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
 }
 
@@ -86,4 +155,63 @@ a {
 
 #image-title-3 {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
+}
+
+.news-bites {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.news-bites h3 {
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.news-bites .bite {
+  display: block;
+  padding: 11px 20px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-top: 1px solid black;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  width: 100%;
+  height: 325px;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .my-times {
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+footer nav {
+  padding-left: 25px;
 }
